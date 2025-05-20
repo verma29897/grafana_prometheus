@@ -50,7 +50,6 @@ sudo grafana-cli admin reset-admin-password utk@admin123#
 **********************************************************************************************************************************************
 # send alert notification to gmail
 create app password from gmail account
-![image](https://github.com/prajeet1000/devops-duniya/assets/132644038/d2bbcbb0-36ff-4672-9dcd-bbcb5c20aa90)
 
 ```bash
 vi vi /etc/grafana/grafana.ini
@@ -58,13 +57,13 @@ vi vi /etc/grafana/grafana.ini
 [smtp]
 enabled = true
 host = smtp.gmail.com:587
-user = prajeetkumar1000@gmail.com
+user = kumar1000@gmail.com
 # If the password contains # or ; you have to wrap it with triple quotes. Ex """#password;"""
 password = rery roao rggn vzne
 ;cert_file =
 ;key_file =
 skip_verify = true
-from_address = prajeetkumar1000@gmail.com
+from_address = kumar1000@gmail.com
 from_name = Grafana
 # EHLO identity in SMTP dialog (defaults to instance_name)
 ;ehlo_identity = dashboard.example.com
@@ -80,8 +79,7 @@ from_name = Grafana
 ```bash
 systemctl restart grafana-serve
 ```
-![image](https://github.com/prajeet1000/devops-duniya/assets/132644038/3f628d97-380f-472c-8930-ebf568114241)
-![image](https://github.com/prajeet1000/devops-duniya/assets/132644038/2c6284fa-6a2a-4d1a-8cb4-a9fa0c7bd93f)
+
 
 
 
